@@ -11,6 +11,10 @@ import (
 // This is the accompanying code for the Developer Quick Start.
 // WARNING: Using root tokens is insecure and should never be done in production!
 func main() {
+	//secret leak
+	aws_secret := "AKIAIMNOJVGFDXXXE4OA"
+	fmt.Println(aws_secret)
+
 	config := vault.DefaultConfig()
 
 	config.Address = "http://127.0.0.1:8200"
